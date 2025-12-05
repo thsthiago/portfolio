@@ -17,14 +17,36 @@ export const metadata: Metadata = {
   title: "Thiago Cabral - Desenvolvedor Full Stack",
   description: "Portfólio de projetos e experiências profissionais",
   icons: {
-    icon: "favicon.ico",
-    shortcut: "favicon.ico",
-    apple: "apple-touch-icon.png",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+    other: [
+      {
+        rel: "android-chrome-192x192",
+        url: "/android-chrome-192x192.png",
+      },
+      {
+        rel: "android-chrome-512x512",
+        url: "/android-chrome-512x512.png",
+      },
+    ],
   },
   openGraph: {
     title: "Thiago Cabral - Desenvolvedor Full Stack",
     description: "Portfólio de projetos e experiências profissionais",
-    images: [{ url: "favicon.ico" }],
+    type: "website",
+    locale: "pt_BR",
+    images: [
+      {
+        url: "/android-chrome-512x512.png",
+        width: 512,
+        height: 512,
+        alt: "Thiago Cabral - Desenvolvedor Full Stack",
+      },
+    ],
   },
 };
 
