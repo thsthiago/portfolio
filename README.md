@@ -1,36 +1,181 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Portfólio Pessoal
 
-## Getting Started
+Meu portfólio pessoal desenvolvido com Next.js 16, React 19 e Tailwind CSS 4. Um projeto moderno e responsivo que apresenta minha trajetória profissional, habilidades técnicas e projetos desenvolvidos.
 
-First, run the development server:
+[![Next.js](https://img.shields.io/badge/Next.js-16.0.7-black)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19.2.0-blue)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38bdf8)](https://tailwindcss.com/)
+
+## ✨ Características
+
+- **Design Moderno**: Interface limpa e responsiva com animações suaves usando Framer Motion
+- **Mobile First**: Totalmente responsivo para todos os dispositivos
+- **Performance Otimizada**: Construído com as melhores práticas do Next.js
+- **Navegação Intuitiva**: Menu de navegação com scroll spy para melhor UX
+- **Formulário de Contato**: Integração com Telegram para receber mensagens
+- **Galeria de Projetos**: Showcase interativo de projetos com popup de detalhes
+
+## 🛠️ Tecnologias Utilizadas
+
+### Core
+
+- **Next.js 16** - Framework React com App Router
+- **React 19** - Biblioteca JavaScript para interfaces
+- **TypeScript** - Tipagem estática para JavaScript
+- **Tailwind CSS 4** - Framework CSS utility-first
+
+### UI Components
+
+- **Radix UI** - Componentes acessíveis e customizáveis
+- **Lucide React** - Ícones modernos e consistentes
+- **Framer Motion** - Animações suaves e performáticas
+- **Shadcn UI** - Sistema de componentes baseado em Radix UI
+
+### Validação & HTTP
+
+- **Zod** - Validação de schemas TypeScript-first
+- **Axios** - Cliente HTTP para requisições
+
+### DevOps & Qualidade
+
+- **ESLint** - Linter para garantir qualidade do código
+- **PostCSS** - Processamento de CSS
+
+## 📋 Pré-requisitos
+
+Antes de começar, certifique-se de ter instalado:
+
+- [Node.js](https://nodejs.org/) (versão 20 ou superior)
+- [pnpm](https://pnpm.io/) (gerenciador de pacotes)
+
+## 🚀 Como Executar
+
+### Instalação
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Clone o repositório
+git clone https://github.com/seu-usuario/portfolio.git
+
+# Entre no diretório
+cd portfolio
+
+# Instale as dependências
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Desenvolvimento
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Inicie o servidor de desenvolvimento
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Acesse [http://localhost:3000](http://localhost:3000) no seu navegador.
 
-## Learn More
+### Build para Produção
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Crie a build otimizada
+pnpm build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Inicie o servidor de produção
+pnpm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Linting
 
-## Deploy on Vercel
+```bash
+# Execute o linter
+pnpm lint
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📁 Estrutura do Projeto
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+portfolio/
+├── public/                 # Arquivos estáticos
+│   ├── projects/          # Imagens dos projetos
+│   └── favicons/          # Ícones do site
+├── src/
+│   ├── app/               # App Router do Next.js
+│   │   ├── (app)/        # Grupo de rotas principal
+│   │   │   ├── HeroSection/
+│   │   │   ├── AboutSection/
+│   │   │   ├── SkillsSection/
+│   │   │   ├── ProjectsSection/
+│   │   │   └── ContactSection/
+│   │   ├── api/          # API Routes
+│   │   └── layout.tsx    # Layout raiz
+│   ├── components/        # Componentes reutilizáveis
+│   │   ├── Header.tsx
+│   │   └── ui/           # Componentes UI base
+│   ├── constants/         # Constantes e dados
+│   ├── hooks/            # Custom hooks
+│   ├── http/             # Serviços HTTP
+│   ├── lib/              # Utilitários e helpers
+│   └── styles/           # Estilos globais
+├── components.json        # Configuração Shadcn UI
+├── next.config.ts        # Configuração Next.js
+├── tailwind.config.ts    # Configuração Tailwind
+└── tsconfig.json         # Configuração TypeScript
+```
+
+## 🎨 Seções do Portfólio
+
+### 🏠 Hero Section
+
+Introdução com apresentação pessoal e call-to-action.
+
+### 👨‍💻 Sobre Mim
+
+Destaque de experiências e trajetória profissional.
+
+### 💻 Habilidades
+
+- **Front-end**: React, Next.js, TypeScript, Tailwind CSS, Material UI
+- **Mobile**: React Native, Expo
+- **Back-end**: Node.js, NestJS, Django, Python
+- **Banco de Dados**: PostgreSQL, MongoDB
+- **Ferramentas**: Git, Docker, Redis, RabbitMQ
+
+### 🚀 Projetos
+
+Showcase de projetos profissionais e pessoais:
+
+- Sistema de Produção de Pacotes
+- Sistema de Atendimento
+- Serviço de Faturamento
+- Integração de Boletos
+- Plataforma de Promoções (AchadosPromo)
+- Pomodoro.Dev
+
+### 📬 Contato
+
+Formulário integrado com notificação via Telegram.
+
+## 🔧 Configurações
+
+### Variáveis de Ambiente
+
+Crie um arquivo `.env.local` na raiz do projeto:
+
+```env
+# Telegram Bot Configuration
+TELEGRAM_BOT_TOKEN=seu_token_do_bot
+TELEGRAM_CHAT_ID=seu_chat_id
+```
+
+## 📞 Contato
+
+Desenvolvido por **Thiago Cabral**
+
+- 💼 LinkedIn: [seu-linkedin](https://linkedin.com/in/seu-usuario)
+- 🐙 GitHub: [seu-github](https://github.com/seu-usuario)
+- 📧 Email: seu-email@exemplo.com
+
+---
+
+⭐ Se este projeto te ajudou de alguma forma, considere dar uma estrela!
+
+Feito com ❤️ e ☕
