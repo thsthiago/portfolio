@@ -105,7 +105,7 @@ export const HeroSection = () => {
             Github
           </motion.a>
 
-          <motion.button
+          {/* <motion.button
             variants={item}
             custom={5}
             initial="hidden"
@@ -113,7 +113,7 @@ export const HeroSection = () => {
             className="px-5 py-2.5 rounded-full border border-indigo-500/70 text-slate-100 text-sm font-medium hover:bg-indigo-500/10 cursor-pointer"
           >
             Download CV
-          </motion.button>
+          </motion.button> */}
         </motion.div>
       </motion.div>
     </MotionSection>
