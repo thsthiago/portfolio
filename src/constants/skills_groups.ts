@@ -1,0 +1,50 @@
+export const SKILL_GROUPS = [
+  {
+    name: "Front-end",
+    highlight: "Minha base e ponto de partida.",
+    items: [
+      "React",
+      "Next.js",
+      "JavaScript",
+      "TypeScript",
+      "Material UI",
+      "Shadcn UI",
+      "Styled Components / CSS-in-JS",
+      "Tailwind CSS",
+      "Performance",
+      "Acessibilidade básica",
+    ],
+  },
+  {
+    name: "Mobile",
+    highlight: "Experiência em app com RN e Expo.",
+    items: ["React Native", "Expo", "Notificações push"],
+  },
+  {
+    name: "Back-end",
+    highlight: "APIs, integrações e arquitetura.",
+    items: [
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "RabbitMQ",
+      "Django / Python",
+      "Autenticação (OAuth / JWT)",
+      "WebSocket",
+      "APIs REST",
+      "Microsserviços",
+      "Prisma",
+      "Swagger",
+    ],
+  },
+  {
+    name: "Banco de dados",
+    highlight: "Modelagem e operações em produção.",
+    items: ["MongoDB", "PostgreSQL"],
+  },
+  {
+    name: "Ferramentas & Infra",
+    highlight: "Stack do dia a dia.",
+    items: ["Git / GitHub", "Docker", "Redis", "Vercel", "Logs", "Figma"],
+  },
+];

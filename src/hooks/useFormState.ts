@@ -1,0 +1,39 @@
+import { useState, useTransition } from "react";
+
+interface FormState {
+  success: boolean;
+  message?: string | null;
+  errors: Record<string, string[]> | null;
+}
+
+export function useFormState(
+  action: (data: FormData) => Promise<FormState>,
+  onSuccess?: () => void,
+  initialState?: FormState
+) {
+  const [formState, setFormState] = useState(
+    initialState ?? {
+      success: false,
+      message: null,
+      errors: null,
+    }
+  );
+  const [isPending, startTransition] = useTransition();
+
+  async function handleAction(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+    const form = event.currentTarget;
+    const data = new FormData(form);
+
+    startTransition(async () => {
+      const state = await action(data);
+      if (state.success && onSuccess) {
+        onSuccess();
+      }
+      setFormState(state);
+    });
+  }
+
+  return [formState, handleAction, isPending] as const;
+}
